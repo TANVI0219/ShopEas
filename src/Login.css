@@ -1,0 +1,175 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #26384b;
+}
+
+.luxury-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background:
+    radial-gradient(circle at 15% 15%, #86bee6 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, #f8dfd1 0%, transparent 42%),
+    linear-gradient(135deg, #a6d1f3, #f1ceb5);
+}
+
+.welcome-panel {
+  display: none;
+}
+
+.form-panel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Soft glass card */
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 42px;
+  border: 1px solid rgba(152, 195, 238, 0.85);
+  border-radius: 22px;
+  background: rgba(253, 205, 215, 0.62);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  box-shadow:
+    0 25px 70px rgba(232, 245, 255, 0.16),
+    0 8px 30px rgba(232, 158, 119, 0.10);
+}
+
+.card-brand {
+  text-align: center;
+  font-size: 30px;
+  color: #d28c67;
+  margin-bottom: 14px;
+}
+
+.eyebrow {
+  color: #c6e5fe;
+  font-size: 10px;
+  letter-spacing: 4px;
+  line-height: 1.8;
+}
+
+.center {
+  text-align: center;
+}
+
+.login-card h2 {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #243b50;
+  margin: 8px 0;
+}
+
+.subtitle {
+  text-align: center;
+  color: #71869a;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+.login-card label {
+  display: block;
+  margin: 19px 0 9px;
+  color: #58768f;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 15px;
+  background: rgba(245, 245, 245, 0.72);
+  border: 1px solid #d7e4ed;
+  border-radius: 10px;
+  outline: none;
+  color: #26384b;
+  font-family: inherit;
+  font-size: 13px;
+  transition: all 0.25s ease;
+}
+
+.login-card input::placeholder {
+  color: #9aabba;
+}
+
+.login-card input:focus {
+  border-color: #83bce0;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(131, 188, 224, 0.17);
+}
+
+.login-card button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 28px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(110deg, #f8e0e6, #f2bdd6);
+  color: #24384b;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(133, 169, 194, 0.2);
+  transition: all 0.25s ease;
+}
+
+.login-card button span {
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+.login-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(133, 169, 194, 0.3);
+  filter: saturate(1.1);
+}
+
+.footer-text {
+  text-align: center;
+  color: #8496a5;
+  font-size: 10px;
+  margin: 27px 0 0;
+  letter-spacing: 0.7px;
+}
+
+@media (max-width: 480px) {
+  .luxury-page {
+    padding: 20px 14px;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+  }
+
+  .login-card h2 {
+    font-size: 42px;
+  }
+}
